@@ -50,7 +50,7 @@ nav ul :hover {
     align-items: center;
     font-size: 14px;
     gap: 7px;
-    /* justify-content: space-around; */
+    
 }
 .cont img{
     height: 13px;
@@ -77,16 +77,13 @@ header div{
     
 }
 h2{
-    font-size: 46px;
-    margin-bottom: 15px;
-}
-h2{
     font-weight: 100;
     line-height: 51px;
     font-size: 46px;
     font-style: normal;
     font-family: Helvetica, sans-serif;
     text-align: center;
+    margin-bottom: 15px;
 }
 .dis{
     font-weight: 400;
@@ -204,3 +201,54 @@ h2{
     align-items: center;
     justify-content: center;
 }
+.announcement-box {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.box1, .box2, .box3, .box4 {
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+}
+.footer-menu {
+    display: flex;
+    justify-content: space-around; /* Evenly space the columns */
+    background-color: #73c14e; /* Green background similar to the image */
+    padding: 20px;
+}
+
+.footer-column {
+    width: 18%; /* Each column takes roughly 18% of the width */
+}
+
+.footer-column h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #e0e0e0; /* Hover effect on links */
+}
+
