@@ -1,0 +1,289 @@
+.kc-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.kc-section .kc {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e1006d;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.kc-section h2 {
+    color: #0a0a0a;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.kc-section .dis {
+    color: #000;
+    margin-top: 20px;
+}
+
+.overview-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.overview-section .kc {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #e5823b;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.overview-section h2 {
+    color: #007e3a;
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 2.5rem;
+}
+
+.overview-section .dis {
+    color: #000;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.readmore {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px 15px;
+    background-color: white;
+    border: 1px solid black;
+    margin-top: 50px;
+}
+
+.readmore:hover {
+    text-decoration: underline;
+}
+
+.readmore::after {
+    content: ' >';
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+.fontfaimly {
+    font-family: 'Helvetica Neue LT W01 55 Roman', sans-serif;
+}
+
+.kc {
+    background-color: rgb(246, 140, 73);
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+    padding: 2px 10px 4px;
+    margin-top: 150px;
+}
+
+.dis {
+    font-size: 1rem;
+    font-size: 22px;
+}
+
+.engtext {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.announcements {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.date {
+    font-size: 0.9rem;
+}
+
+.logo {
+    height: 50px;
+}
+
+.cont img {
+    height: 12px;
+    width: 11px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+header {
+    text-align: center;
+}
+
+.press {
+    display: flex;
+    justify-content: space-between;
+}
+
+.press .rightside,
+.press .leftside .box1,
+.press .leftside .box2,
+.press .leftside .box3,
+.press .leftside .box4 {
+    border: 1px solid #eaeaea;
+    padding: 20px;
+    margin: 10px;
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+}
+.container mt-4{
+    width: 100% !important;
+}
+.img-fluid{
+    width: 100% !important;
+    height: auto !important;
+}
+.press-release {
+    width: 70%; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.title {
+    color: #3b996d; 
+    font-size: 1.5rem;
+}
+
+.date {
+    font-size: 1rem;
+    color: #777;
+}
+
+.main-text {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: #333;
+}
+
+.announcements-container {
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 20px; 
+    margin-top: 20px;  
+}
+
+.announcement {
+    flex: 1 1 calc(50% - 20px); 
+    background-color: #f5f5f5; 
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.announcement-type {
+    color: #3b996d; 
+}
+
+.announcement-title {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.press {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px; 
+}
+
+.press-release {
+    width: 35%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 550px;
+}
+
+.announcement-grid {
+    width: 50%; 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 20px; 
+}
+
+.box1, .box2, .box3, .box4 {
+    position: relative;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+.box1 {
+    background-image: url('announcement-square.jpg');
+}
+
+.box2 {
+    background-image: url('hussain-dawood-speech-psx.png');
+}
+
+.box3 {
+    background-image: url('press-releases-home-page-thumb1.png');
+}
+
+.box4 {
+    background-image: url('lata-3.jpg');
+}
+
+.info {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+}
+
+.announcements {
+    display: block;
+    background-color: rgba(0, 126, 58, 0.8);
+    padding: 5px;
+    font-weight: bold;
+}
+
+.date {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.engtext {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.mt-2{
+    font-size: 46px;
+}
+.bg-success {
+    background-color: #73c14e !important; /* Adjust green color */
+}
+
+.footer-column a:hover {
+    color: #e0e0e0 !important; /* Hover color */
+}
+
+
