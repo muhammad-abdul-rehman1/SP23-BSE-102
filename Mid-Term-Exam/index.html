@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio - Your Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Main Section with Profile Image on the Side -->
+    <header class="header">
+        <div class="container">
+            <section class="profile">
+                <div class="container profile-container">
+                    <div class="profile-picture">
+                        <img src="profile.png" alt="Profile Picture">
+                    </div>
+                    <div class="profile-details">
+                        <h2>Abdul Rehman</h2>
+                        <h3>Software Engineer</h3>
+                        <p>Dedicated software engineering student adept at crafting robust code and developing innovative solutions for complex problems.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul>
+                <li>Web Design</li>
+                <li>Design Thinking</li>
+                <li>Wireframe Creation</li>
+                <li>Front End Coding</li>
+                <li>Problem-Solving</li>
+                <li>Computer Literacy</li>
+                <li>Project Management Tools</li>
+                <li>Strong Communication</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Applications Developer</h3>
+                <p><strong>Really Great Company</strong> | 2016 - Present</p>
+                <ul>
+                    <li>Database administration and website design</li>
+                    <li>Built the logic for a streamlined ad-serving platform that scaled</li>
+                    <li>Educational institutions and online classroom management</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Web Content Manager</h3>
+                <p><strong>Really Great Company</strong> | 2014 - 2016</p>
+                <ul>
+                    <li>Database administration and website design</li>
+                    <li>Built the logic for a streamlined ad-serving platform</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p><strong>Higher Secondary College</strong>, Punjab College Wazirabad, 2019-2021</p>
+            <p><strong>Bachelor of Technology</strong>, Comsats University Lahore, 2023 - 2027</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+<section class="projects">
+    <div class="container">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Semester 1 Projects</h3>
+            <ul>
+                <li><strong>Project Title:</strong> Project 1</li>                <li><strong>Technologies:</strong> HTML, CSS, JavaScript</li>
+            </ul>
+            <button class="show-description-btn" data-project="project1.txt">Show Description</button>
+            <div class="project-description" id="description-project1"></div>
+        </div>
+
+        <div class="project">
+            <h3>Semester 2 Projects</h3>
+            <ul>
+                <li><strong>Project Title:</strong> Project 2</li>
+                <li><strong>Technologies:</strong> HTML, CSS, JavaScript</li>
+            </ul>
+            <button class="show-description-btn" data-project="project2.txt">Show Description</button>
+            <div class="project-description" id="description-project2"></div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Form Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit-form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container contact-container">
+            <ul class="contact-info">
+                <li><strong>Phone:</strong> +92 346 8275390</li>
+                <li><strong>Email:</strong> abdulrehman@gmail.com</li>
+                <li><strong>Location:</strong> LDA Avenue, Lahore</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
