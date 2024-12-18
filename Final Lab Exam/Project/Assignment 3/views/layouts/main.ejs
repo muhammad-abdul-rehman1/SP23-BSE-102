@@ -1,0 +1,57 @@
+<!-- views/layouts/main.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+  <style>
+    .header-fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #0ebf0e;
+      height: 50px;
+      z-index: 1000;
+    }
+    .header-fixed nav {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 20px;
+    }
+    .header-fixed nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    .header-fixed nav li {
+      margin-right: 20px;
+    }
+    .header-fixed nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .header-fixed nav a:hover {
+      color: #a4f2af;
+    }
+  </style>
+</head>
+<body>
+  <header class="header-fixed">
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div style="margin-top: 50px;">
+      <%- body %>
+    </div>
+  </main>
+</body>
+</html>
