@@ -1,0 +1,101 @@
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    }
+    
+    .category-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto;
+      display: block;
+      width: 70%;
+    }
+  
+    .category-list li {
+      padding: 20px 10px;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    .category-list form {
+      float: right;
+    }
+  
+    .category-list button[type="submit"] {
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 4px 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  
+    .category-list button[type="submit"]:hover {
+      background-color: #cc0000;
+    }
+
+    h2  {
+        text-align: center;
+    }
+
+    .add-category {
+      display: block;
+      margin: 25px auto;
+      padding-left: 20px;
+      width: 70%;
+    }
+
+    .add-category input {
+        width: 200px;
+        margin-right: 50px;
+        border-radius: 5px;
+        padding: 5px 8px;
+      }
+
+      .add-category button {
+        margin-right: 20px;
+        border-radius: 5px;
+        padding: 5px 8px;
+        color: #fff;
+        cursor: pointer;
+        background-color: #121d86;
+      }
+</style>
+  
+  <h2>Categories</h2>
+  <% if (typeof success !== 'undefined') { %>
+    <div 
+        id="success-message" 
+        style="color: green; text-align: center; font-size: 20px; padding: 20px 0px;">
+        <%= success %>
+    </div>
+    <script>
+        setTimeout(function() {
+          document.getElementById('success-message').style.display = 'none';
+        }, 5000);
+      </script>
+  <% } %>
+  <ul class="category-list">
+    <% if (categories.length > 0) { %>
+      <% categories.forEach(category => { %>
+        <li>
+          <%= category.name %>
+          <form action="/admin/categories/delete" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="hidden" name="id" value="<%= category._id %>">
+            <button type="submit">
+              <img width="20" height="20" alt="delete" src="../images/delete-icon.png"/>
+            </button>
+          </form>
+        </li>
+      <% }); %>
+    <% } else { %>
+      <li>No categories found.</li>
+    <% } %>
+  </ul>
+
+    <form class="add-category" action="/admin/categories" method="post">
+        <input type="text" id="name" name="name" placeholder="Enter the new Category Name" required>
+        <button type="submit">Add Category</button>
+    </form>
