@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Login</h1>
+        <% if (typeof error !== 'undefined') { %>
+            <div class="error-message" id="error-message"><%= error %></div>
+            <script>
+                setTimeout(function() {
+                  document.getElementById('error-message').style.display = 'none';
+                }, 5000);
+              </script>
+          <% } %>
+        <form action="/login" method="POST">
+            <input type="email" name="email" placeholder="Enter Email" required>
+            <input type="password" name="password" placeholder="Enter Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <a href="/signup">Go to Signup</a>
+    </div>
+</body>
+</html>
