@@ -40,5 +40,3 @@ This project is a full-featured e-commerce platform built to provide user and ad
 - Admin functionality is not available by default and must be manually configured.
 
 ---
-
-Feel free to update this README with additional project details or instructions as needed.
